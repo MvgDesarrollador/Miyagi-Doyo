@@ -1,0 +1,168 @@
+*{
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+header{
+    background-color: black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100px;
+    border-bottom: 10px solid white;
+}
+
+.img_logo{
+    width: 80px;
+    border-radius: 100%;
+    margin-left: 10px;
+}
+
+.nav_list {
+    display: flex;
+    justify-content: space-around;
+    height: 100%;
+
+}
+
+.nav_li{
+    list-style: none;
+    margin-right: 40px;
+}
+
+.a_li{
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+}
+
+.nav_li_inscripcion{
+    border: 1px solid orange;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.nav_li_inscripcion:hover{
+    background-color: orange;
+    transition: 0.3s ease;
+}
+
+.nav_li_other{
+    padding: 10px;
+}
+
+.nav_li_other:hover{
+    border: 1px solid white;
+    transition: 0.3s ease;
+    border-radius: 5px;
+}
+
+.prices{
+    width: 80%;
+    margin: auto;
+    padding: 20px;
+}
+
+.tittle_prices{
+    text-align: center;
+}
+
+.option_prices{
+    display: flex;
+    justify-content: space-around;
+    padding: 15px 0;
+}
+
+.monthly {
+    background: linear-gradient(135deg, #FFA500, #FF6347); 
+    padding: 10px 20px; 
+    border-radius: 5px; 
+    text-align: center;  
+    color: white;
+    width: 200px;
+}
+
+.yearly {
+    background: linear-gradient(135deg, #000000, #333333);
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-align: center;
+    width: 200px;
+}
+
+.discounts{
+    border: 2px solid orange;
+    padding: 20px;
+    border-radius: 10px;
+    width: 80%;
+    margin: auto;
+    text-align: center;
+}
+
+.discounts_li{
+    list-style: none;
+}
+
+.button_form{
+    background: linear-gradient(135deg, #000000, #333333);
+    border-radius: 5px;
+    padding: 2px 8px;
+}
+
+.a_button_form{
+    text-decoration: none;
+    color: white;
+}
+/*Tamaño tablets*/
+
+@media only screen and (max-width: 768px) {
+
+  }
+
+  /*Tamaño celulares*/
+
+ @media only screen and (max-width: 500px) {
+    header{
+        display: flex;
+        flex-direction: column;
+        height: auto;
+    }
+
+    .img_logo{
+        padding-top: 10px;
+        width: 60px;
+        border-radius: 100%;;
+    }
+
+    .nav_list {
+        margin-bottom: 10px;
+        padding-top: 5px;
+    }
+
+    .a_li{
+        font-size: 16px;
+    }
+
+    .option_prices{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .monthly {
+        margin-bottom: 10px;
+    }
+    
+    .yearly {
+        background: linear-gradient(135deg, #000000, #333333);
+        color: white;
+        padding: 10px 20px;
+        border-radius: 5px;
+        text-align: center;
+        width: 200px;
+    }
+    
+
+  }
